@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Questrial';
+    src: url('Questrial-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf');
+}
+* {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+}
+html {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+h2 {
+    font-size: 3rem;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#app-container {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1e22;
+}
+a.section-block {
+    text-decoration: none;
+}
+#left-panel {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#right-panel {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#people {
+    height: 50%;
+    background: url("../img/people.jpg") no-repeat center;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out;
+}
+#people:hover {
+    background-size: 120%;
+}
+#planets {
+    height: 50%;
+    background: url("../img/planets.jpg") no-repeat center;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out;
+}
+#planets:hover {
+    background-size: 120%;
+}
+#starships {
+    height: 100%;
+    background: url("../img/starships.jpg") no-repeat center;
+    background-size: auto 100%;
+}
+#starships:hover {
+    height: 100%;
+    background: url("../img/starships2.gif") no-repeat center;
+    background-size: auto 100%;
+}
+#menu-nav {
+    height: 100%;
+    float: left;
+    width: 20%;
+    background-color: black;
+    font-size: 1.3rem;
+    max-width: 260px
+}
+#nav-options {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+li.menu-item {
+    margin: 25% auto;
+}
+a.menu-link:hover {
+    text-decoration: underline;
+}
+a.menu-link.active {
+    text-decoration: underline;
+}
+#gallery-container {
+    float: left;
+    width: 80%;
+}
+#gallery-container {
+    position: relative;
+    height: 100%;
+}
+#search-bar {
+    background-color: dimgray;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+#gallery-content {
+    position: absolute;
+    height: calc(100% - 3rem);
+    width: 100%;
+    left: 0;
+    top: 3rem;
+}
+#prev-page {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 2rem;
+    padding-left: 3px;
+}
+#next-page {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 2rem;
+    padding-right: 3px;
+}
+#items-list {
+    padding-top: 2rem;
+    /*height: 100%;*/
+}
+li.list-element {
+    display: inline;
+    width: 18%;
+    float: left;
+    height: 16rem;
+    border: 2px solid #272b30;
+    margin: 2rem 0.2rem;
+    border-radius: 0.2rem;
+    background-color: #272b30;
+}
+i.search-icon {
+    font-size: 2rem;
+    font-weight: 100;
+    padding-left: 0.8rem;
+}
+.input-field{
+    height: 100%;
+    background-color: transparent;
+    width: 40%;
+    color: white;
+    text-align: left;
+    border: 0;
+    padding-left: 0.7rem;
+}
+.sort-button{
+    border: 1px solid grey;
+    margin: 0 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+.element-img{
+    padding-top: 0.4rem;
+}
