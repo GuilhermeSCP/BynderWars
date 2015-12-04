@@ -13,6 +13,7 @@
 <body>
     <div id="app-container">
         <div id="menu-nav" class="flex">
+            <h3 class="logo">BYNDER WARS</h3>
             <ul id="nav-options">
                 <li class="menu-item">
                     <a href="people-list.html" class="menu-link active">PEOPLE</a>
@@ -26,99 +27,24 @@
             </ul>
         </div>
         <div id="gallery-container" class="flex">
+            <div id="loader" class="spinner-loader">
+                Loading…
+            </div>
             <div id="search-bar">
                 <i class="search-icon fa fa-search"></i>
-                <input class="input-field" type="text" value="Filter..."/>
+                <input class="input-field" type="text" value="Filter..." />
                 <span class="sort-splitter">|</span>
-                <span id="sort-name" class="sort-button">Name</span>
-                <span id="sort-age" class="sort-button">Age</span>
-                <span id="sort-sex" class="sort-button">Sex</span>
+                <a href="#"><span id="sort-name" class="sort-button">Name</span></a>
+                <a href="#"><span id="sort-age" class="sort-button">Age</span></a>
+                <a href="#"><span id="sort-sex" class="sort-button">Sex</span></a>
             </div>
             <div id="gallery-content">
-                <div id="prev-page"><i class="fa fa-angle-left"></i></div>
+                <div id="prev-page"><a href="#" onclick="prevPage()"><i class="fa fa-angle-left"></i></a></div>
                 <ul id="items-list">
-                    <li class="list-element">
-                        <div element-id="">
-                            <img class="element-img" src="http://placehold.it/90x90" />
-                            <p class="element-name">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div element-id="">
-                            <img src="http://placehold.it/90x90" />
-                            <p class="">Han Solo</p>
-                            <p class="element-2ndliner">Birth Year</p>
-                            <a href="#">Corelia</a>
-                        </div>
-                    </li>
+
                 </ul>
-                <div id="next-page"><i class="fa fa-angle-right"></i></div>
+                <p id="pageNo"></p>
+                <div id="next-page"><a href="#" onclick="nextPage()"><i class="fa fa-angle-right"></i></a></div>
             </div>
         </div>
     </div>
