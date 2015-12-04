@@ -6,7 +6,6 @@ var p = 1,
 var retrievePeople = function () {
     if (next) {
         swapiModule.getPeople(p, function (data) {
-
             if (data.next === null) {
                 next = false;
             }
@@ -53,15 +52,15 @@ var renderPage = function (page) {
             });
         })(i);
     }
-    $("#pageNo").text("Page "+currentIndex);
+    $("#pageNo").text("Page " + currentIndex);
 };
 
 var renderFilter = function (objects) {
-    
+
 };
 
 var filterByPlanet = function (planet) {
-    
+
 };
 
 var nextPage = function () {
