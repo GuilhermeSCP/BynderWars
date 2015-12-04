@@ -84,7 +84,6 @@ a.section-block {
     width: 20%;
     background-color: black;
     font-size: 1.3rem;
-    max-width: 260px;
     position: relative;
 }
 .logo {
@@ -111,13 +110,10 @@ a.menu-link.active {
     text-decoration: underline;
 }
 #gallery-container {
-    float: left;
-    width: 80%;
-}
-#gallery-container {
     position: relative;
     height: 100%;
-}
+    float: left;
+    width: 80%;}
 #search-bar {
     background-color: dimgray;
     width: 100%;
@@ -199,7 +195,7 @@ i.search-icon {
     text-decoration: underline;
     color: skyblue;
 }
-#pageNo{
+#pageNo {
     position: absolute;
     left: 50%;
     bottom: 2rem;
