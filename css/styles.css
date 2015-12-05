@@ -151,13 +151,15 @@ a.menu-link.active {
 }
 li.list-element {
     display: inline;
-    width: 18%;
+    width: 15%;
     float: left;
     height: 18rem;
     border: 2px solid #272b30;
-    margin: 2rem 0.2rem;
+    margin: 2rem 1%;
     border-radius: 0.2rem;
     background-color: #272b30;
+    box-sizing: content-box;
+    
 }
 i.search-icon {
     font-size: 2rem;
@@ -172,6 +174,7 @@ i.search-icon {
     text-align: left;
     border: 0;
     padding-left: 0.7rem;
+    vertical-align: middle; 
 }
 .sort-button {
     border: 1px solid grey;

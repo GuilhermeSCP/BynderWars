@@ -32,9 +32,10 @@
             </div>
             <div id="search-bar">
                 <i class="search-icon fa fa-search"></i>
-                <input class="input-field" type="text" value="Filter..." />
+                    <input class="input-field" type="text" placeholder="Filter..." onkeydown="if (event.keyCode == 13) { renderFilter(); return false; }"/>
+                <a href="#"><span id="clear-filter" class="sort-button" onclick="renderFilter(0);">Clear</span></a>
                 <span class="sort-splitter">|</span>
-                <a href="#"><span id="sort-name" class="sort-button">Name</span></a>
+                <a href="#"><span id="sort-name" class="sort-button" onclick="sort('name')">Name</span></a>
                 <a href="#"><span id="sort-age" class="sort-button">Age</span></a>
                 <a href="#"><span id="sort-sex" class="sort-button">Sex</span></a>
             </div>
